@@ -7,7 +7,7 @@ A JavaScript app that verifies card numbers using the " Luhn Algorithm"; current
 CHECK IT OUT: [HERE](https://card-verification.vercel.app/)
 
 <br>
-__FEEL FREE TO MAKE CHANGES AND MAKE A PULL REQUEST.__
+**FEEL FREE TO MAKE CHANGES AND MAKE A PULL REQUEST.**
 
 <br>
-_Note: The number entered is to captured, saved or stored any where._
+*Note: The number entered is to captured, saved or stored any where.*
