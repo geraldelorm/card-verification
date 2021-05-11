@@ -2,7 +2,7 @@
 
 A JavaScript app that verifies card numbers using the " Luhn Algorithm"; currently works with VISA, Mastercard, American Express, and Discover cards.
 
-![DESIGN](./design/figma_design/card-verification.png)
+![DESIGN](./design/figma_design/figma_design.png)
 
 CHECK IT OUT: [HERE](https://card-verification.vercel.app/)
 
