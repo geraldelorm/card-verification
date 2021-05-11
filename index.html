@@ -8,17 +8,27 @@
     <title>Card Verification</title>
   </head>
   <body>
-    <header>
-      <h1>Card Verification</h1>
-    </header>
-    <section>
-      <input id="input" type="number" />
-      <button id="check">Check</button>
-    </section>
-    <section id="result"></section>
-    <!-- <footer>
-      <p>Built By: Gerald</p>
-    </footer> -->
+    <div class="container">
+      <header>
+        <h1>Card Verification</h1>
+        <a href="https://github.com/geraldelorm/card-verification"
+          ><img src="./assets/svg/github.svg" alt=""
+        /></a>
+      </header>
+      <div class="card_input">
+        <section class="card"></section>
+        <section class="input_area">
+          <input id="input" placeholder="Enter Valid Card Number" />
+          <button id="check">CHECK</button>
+        </section>
+      </div>
+
+      <section id="result"></section>
+      <footer>
+        <p>Built By: <a href="https://twitter.com/geraldelorm" target="_blank">Gerald</a></p>
+      </footer>
+    </div>
+
     <script src="./app.js"></script>
   </body>
 </html>
