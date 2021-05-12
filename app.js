@@ -1,5 +1,7 @@
 const input = document.getElementById('input');
 const check = document.getElementById('check');
+const provider = document.getElementById('provider');
+const cardNumber = document.getElementById('card_number');
 const result = document.getElementById('result');
 const length = input.value.length;
 
@@ -12,7 +14,7 @@ function checkInputValidity() {
   const length = input.value.length;
   switch (true) {
     case length === 0:
-      result.innerHTML = `<h1>ENTER A CARD NUMBER</h1>`;
+      result.innerHTML = `<h1>Enter A Card Number</h1>`;
       break;
     case length === 13:
     case length === 15:
@@ -21,7 +23,7 @@ function checkInputValidity() {
       luhnCheck(input.value);
       break;
     default:
-      result.innerHTML = `<h1>INVALID CARD</h1>`;
+      result.innerHTML = `<h1>Invalid Length</h1>`;
   }
 }
 
@@ -36,23 +38,33 @@ const luhnCheck = (num) => {
   sum += lastDigit;
 
   if (sum % 10 !== 0) {
-    result.innerHTML = `<h1>DID NOT PASS CHECK</h1>`;
+    result.innerHTML = `<h1>Your Card Is Invalid</h1>`;
   } else {
     let newArr = (num + '').split('').map((x) => parseInt(x));
     if (newArr[0] == 4) {
       if (input.value.length == 13 || input.value.length == 16) {
-        result.innerHTML = `<h1>VISA</h1>`;
+        result.innerHTML = `<h1>Your Card Is A VISA Card</h1>`;
+        provider.style.backgroundImage = 'url(./assets/svg/visa.svg)';
+        cardNumber.innerText = num;
       }
     } else if (newArr[0] == 5 && input.value.length == 16) {
-      result.innerHTML = `<h1>MASTER</h1>`;
+      result.innerHTML = `<h1>Your Card Is A Mastercard</h1>`;
+      provider.style.backgroundImage = 'url(./assets/svg/mastercard.svg)';
+      cardNumber.innerText = num;
     } else if (newArr[0] == 3 && input.value.length == 15) {
       if (newArr[1] == 4 || newArr[1] == 7) {
-        result.innerHTML = `<h1>AMEX</h1>`;
+        result.innerHTML = `<h1>Your Card Is An American Express Card</h1>`;
+        provider.style.backgroundImage = 'url(./assets/svg/american-express-main.svg)';
+        cardNumber.innerText = num;
       }
     } else if (newArr[0] == 6 && input.value.length == 16) {
-      result.innerHTML = `<h1>DISCOVER</h1>`;
+      result.innerHTML = `<h1>Your Card Is A Discover Card</h1>`;
+      provider.style.backgroundImage = 'url(./assets/svg/discover.svg)';
+      cardNumber.innerText = num;
     } else {
-      result.innerHTML = `<h1>THIS IS AN UNKNOWN CARD TYPE</h1>`;
+      result.innerHTML = `<h1>This Card Provider Is Unknown</h1>`;
+      provider.style.backgroundImage = 'url(./assets/svg/unknown-folder.svg)';
+      cardNumber.innerText = num;
     }
   }
   console.log(input.value.length);
