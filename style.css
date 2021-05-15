@@ -24,12 +24,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px 10px;
+  margin: 10px;
 }
 header > h1 {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 header > a > img {
@@ -47,7 +47,7 @@ header > a > img {
   position: relative;
 }
 .your_bank {
-  color: rgb(167, 167, 167);
+  color: rgb(194, 194, 194);
   position: absolute;
   top: 25px;
   right: 25px;
@@ -62,7 +62,7 @@ header > a > img {
   font-size: 1.5rem;
 }
 .your_name {
-  color: rgb(167, 167, 167);
+  color: rgb(194, 194, 194);
   position: absolute;
   bottom: 25px;
   left: 25px;
@@ -84,12 +84,13 @@ header > a > img {
   justify-content: space-between;
 }
 #input {
-  border: 2px solid rgb(143, 143, 143);
+  border: 2px solid rgb(0, 0, 0);
+  outline: 0;
   width: 230px;
   height: 40px;
   border-radius: 7px;
   font-size: 1rem;
-  padding: 5px;
+  padding: 5px 15px;
 }
 #check {
   width: 100px;
@@ -122,11 +123,25 @@ a {
 footer > p > a {
   color: rgb(0, 89, 255);
 }
-
-@media (max-width: 370px) {
+@media (max-width: 380px) {
   header > h1 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
+  .input_area {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  #input {
+    width: 100%;
+  }
+  #check {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    width: 40%;
+    text-align: center;
+  }
+}
+@media (max-width: 370px) {
   header > img {
     width: 30px;
     height: 30px;
@@ -160,19 +175,5 @@ footer > p > a {
     position: absolute;
     bottom: 0px;
     right: 0;
-  }
-}
-
-@media (max-width: 380px) {
-  .input_area {
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  #input {
-    width: 250px;
-  }
-  #check {
-    margin-top: 10px;
-    font-size: 1.1rem;
   }
 }
