@@ -47,7 +47,7 @@ header > a > img {
   position: relative;
 }
 .your_bank {
-  color: rgb(194, 194, 194);
+  color: rgb(255, 255, 255);
   position: absolute;
   top: 25px;
   right: 25px;
@@ -62,7 +62,7 @@ header > a > img {
   font-size: 1.5rem;
 }
 .your_name {
-  color: rgb(194, 194, 194);
+  color: rgb(255, 255, 255);
   position: absolute;
   bottom: 25px;
   left: 25px;
@@ -84,7 +84,7 @@ header > a > img {
   justify-content: space-between;
 }
 #input {
-  border: 2px solid rgb(0, 0, 0);
+  border: 1.5px solid rgb(0, 0, 0);
   outline: 0;
   width: 230px;
   height: 40px;
@@ -107,7 +107,7 @@ header > a > img {
 
 #result {
   margin: 0 auto;
-  color: rgb(90, 89, 89);
+  color: rgb(31, 31, 31);
   font-size: 1rem;
   text-align: center;
 }
@@ -117,9 +117,9 @@ footer {
 }
 footer > p,
 a {
-  font-weight: 700;
-  font-style: italic;
+  font-weight: 600;
   text-decoration: none;
+  font-size: 0.8rem;
 }
 footer > p > a {
   color: rgb(0, 89, 255);
