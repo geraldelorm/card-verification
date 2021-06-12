@@ -11,5 +11,4 @@ CHECK IT OUT [HERE](https://cardverification.vercel.app/)
 <br>
 FEEL FREE TO MAKE CHANGES AND MAKE A PULL REQUEST.:man_technologist:
 
-<br>
-Note: The number entered is to captured, saved or stored any where.
+
