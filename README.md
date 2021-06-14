@@ -8,7 +8,4 @@ A JavaScript app that verifies card numbers using the " Luhn Algorithm"; current
 
 CHECK IT OUT [HERE](https://cardverification.vercel.app/)
 
-<br>
-FEEL FREE TO MAKE CHANGES AND MAKE A PULL REQUEST.:man_technologist:
-
 
