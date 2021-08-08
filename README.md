@@ -6,6 +6,6 @@ A JavaScript app that verifies card numbers using the " Luhn Algorithm"; current
 
 [Figma Design](https://www.figma.com/file/s2BX4SbeVbRuVLdINuiaq5/Card-Verification?node-id=13%3A2)
 
-Try it out [here](https://cardverification.vercel.app/)
+Try it out [here](https://cardverification.vercel.app/) 
 
 
